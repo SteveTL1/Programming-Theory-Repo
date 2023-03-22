@@ -10,12 +10,12 @@ using UnityEditor;
 
 public class TitleSceneUIManager : MonoBehaviour
 {
-   
+    // ABSTRACTION
     public void LoadScene()
     {
         SceneManager.LoadScene(1);
     }
-
+    // ABSTRACTION
     public void EndApplication()
     {
 #if UNITY_EDITOR

@@ -18,30 +18,30 @@ public class MainSceneUIManager : MonoBehaviour
     {
         Instance = this;
     }
-  
+    // ABSTRACTION
     public void OnAwakeChangeUI()
     {
         dogRaceText.text = "You´re Dog´s race is: " + dogRaceReturn;
         dogNameText.text = "You´re Dog´s name is: " + dogNameReturn;
     }
-
+    // ABSTRACTION
     public string ChangeName(string dogName)
     {
         dogNameReturn = dogName;
         return dogNameReturn;
     }
-
+    // ABSTRACTION
     public string ChangeRace(string dogRace)
     {
         dogRaceReturn = dogRace;
         return dogRaceReturn;
     }
-
+    // ABSTRACTION
     public void NewDog()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
+    // ABSTRACTION
     public void EndApplication()
     {
 #if UNITY_EDITOR
